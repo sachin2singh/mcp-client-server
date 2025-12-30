@@ -53,5 +53,6 @@ Open Cursor IDE
 
 ## 🔗 Related Modules
 
-- MCP Client (Gemini-based): mcp-cleint/
-- Terminal MCP Server: terminal_server/
+- **MCP Client (Gemini-based)**: [`mcp-cleint/`](./mcp-cleint)
+- **Terminal MCP Server**: [`terminal_server/`](./terminal_server)
+
