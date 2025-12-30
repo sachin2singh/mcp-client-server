@@ -4,8 +4,6 @@ This project contains a **Python-based MCP client** implemented using **`uv`** f
 
 The client is designed to communicate with an MCP-compatible server (for example, the terminal-based server in the parent repository) and serves as a hands-on learning implementation of the **Model Context Protocol (MCP)**.
 
----
-
 ## 📁 Project Structure
 
 mcp-cleint/
@@ -13,9 +11,6 @@ mcp-cleint/
 ├── client.py
 ├── requirements.txt
 └── pyproject.toml
-
-
----
 
 ## 🧠 Purpose
 
@@ -28,17 +23,13 @@ The MCP client is responsible for:
 
 This project prioritizes **simplicity, clarity, and extensibility**, making it suitable for learning and prototyping.
 
----
-
 ## 🛠️ Prerequisites
 
 - Python 3.12+
 - [`uv`](https://github.com/astral-sh/uv) installed
 
 Verify `uv` installation:
-
-```bash
-uv --version
+```bash uv --version ```
 
 🚀 Setup Instructions (using uv)
 1️⃣ Initialize the Project
