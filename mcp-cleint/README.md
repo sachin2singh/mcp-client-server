@@ -6,11 +6,8 @@ The client is designed to communicate with an MCP-compatible server (for example
 
 ## 📁 Project Structure
 
-mcp-cleint/
-├── README.md
-├── client.py
-├── requirements.txt
-└── pyproject.toml
+<img width="314" height="244" alt="image" src="https://github.com/user-attachments/assets/96e8ff49-8819-412c-9881-69a9ec6f943d" />
+
 
 ## 🧠 Purpose
 
@@ -23,17 +20,17 @@ The MCP client is responsible for:
 
 This project prioritizes **simplicity, clarity, and extensibility**, making it suitable for learning and prototyping.
 
-## 🛠️ Prerequisites
+## ⚡ Quick Start
 
+**Prerequisites**
 - Python 3.12+
 - [`uv`](https://github.com/astral-sh/uv) installed
 - Google Gemini API Key (Free Tier)
 Verify `uv` installation:
 ```bash 
 uv --version
+export GEMINI_API_KEY=your_api_key_here
 ```
-
-## 🔑 Google Gemini API Key (Free Tier)
 
 **What you need**
 
@@ -102,16 +99,13 @@ This file will evolve to include:
 
 ## 🤝 Related Projects
 
-Terminal MCP Server: Located in terminal_server/ at the repository root
-
-Parent Repository: mcp-client-server
+- Terminal MCP Server: Located in terminal_server/ at the repository root
+- Parent Repository: mcp-client-server
 
 ## 📌 Notes
 
-This project uses uv for fast dependency resolution and virtual environment management
-
-Each module in the monorepo is intentionally self-contained
-
-Folder name mcp-cleint is kept as-is for now
+- This project uses uv for fast dependency resolution and virtual environment management
+- Each module in the monorepo is intentionally self-contained
+- Folder name mcp-cleint is kept as-is for now
 
 
