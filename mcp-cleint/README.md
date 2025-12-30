@@ -1,6 +1,6 @@
 # MCP Client (Python, uv)
 
-This project contains a **Python-based MCP client** implemented using **`uv`** and **`Google Gemini Model`**for dependency and environment management.
+This project contains a **Python-based MCP client** implemented using **`uv`** and **Google Gemini Model** for dependency and environment management.
 
 The client is designed to communicate with an MCP-compatible server (for example, the terminal-based server in the parent repository) and serves as a hands-on learning implementation of the **Model Context Protocol (MCP)**.
 
