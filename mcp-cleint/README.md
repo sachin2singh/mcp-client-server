@@ -1,6 +1,6 @@
 # MCP Client (Python, uv)
 
-This project contains a **Python-based MCP client** implemented using **`uv`** for dependency and environment management.
+This project contains a **Python-based MCP client** implemented using **`uv`** and **`Google Gemini Model`**for dependency and environment management.
 
 The client is designed to communicate with an MCP-compatible server (for example, the terminal-based server in the parent repository) and serves as a hands-on learning implementation of the **Model Context Protocol (MCP)**.
 
@@ -27,11 +27,27 @@ This project prioritizes **simplicity, clarity, and extensibility**, making it s
 
 - Python 3.12+
 - [`uv`](https://github.com/astral-sh/uv) installed
-
+- Google Gemini API Key (Free Tier)
 Verify `uv` installation:
 ```bash 
 uv --version
 ```
+
+## 🔑 Google Gemini API Key (Free Tier)
+
+**What you need**
+
+- A Google account
+- No credit card required for the free tier (usage limits apply)
+
+**How to create a free Gemini API key**
+- Go to Google AI Studio
+   👉 https://aistudio.google.com
+- Sign in with your Google account
+- Click “Get API key” (top-right corner)
+- Create a new API key
+- Copy the generated key
+
 
 ## 🚀 Setup Instructions (using uv)
 1️⃣ Initialize the Project
@@ -51,7 +67,7 @@ source .venv/Scripts/activate   # Windows (Git Bash)
 uv add -r requirements.txt
 ```
 
-▶️ Running the MCP Client
+▶️ Running the MCP Client with Terminal Server
 From the mcp-cleint directory, run:
 ```bash
 uv run client.py ../../terminal_server/main.py
@@ -59,7 +75,8 @@ uv run client.py ../../terminal_server/main.py
 What this does
 - Starts the MCP client
 - Launches the terminal-based MCP server
-- Establishes client–server communication via the configured transport
+- Sends user prompts to Gemini
+- Allows Gemini to invoke MCP tools when appropriate
 
 ## 🧩 Code Overview
 client.py
