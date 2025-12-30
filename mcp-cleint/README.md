@@ -29,9 +29,11 @@ This project prioritizes **simplicity, clarity, and extensibility**, making it s
 - [`uv`](https://github.com/astral-sh/uv) installed
 
 Verify `uv` installation:
-```bash uv --version ```
+```bash 
+uv --version
+```
 
-🚀 Setup Instructions (using uv)
+## 🚀 Setup Instructions (using uv)
 1️⃣ Initialize the Project
 uv init mcp-cleint
 This creates the pyproject.toml and initializes the project.
