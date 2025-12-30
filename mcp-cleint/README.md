@@ -1,4 +1,4 @@
-# MCP Client (Python, uv)
+# MCP Client (Python, uv, Google Gemini LLM)
 
 This project contains a **Python-based MCP client** implemented using **`uv`** and **Google Gemini Model** for dependency and environment management.
 
