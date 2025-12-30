@@ -56,9 +56,11 @@ main.py
 - Initializes server runtime
 - Registers tools and handlers
 - Manages request/response lifecycle
+
 test_mcp_tool.py
 - Tests individual MCP tool implementations
 - Validates tool input/output behavior
+
 test_server.py
 - Tests server startup and basic request handling
 - Useful for regression and protocol validation
@@ -79,4 +81,5 @@ uv run test_mcp_tool.py
 - This server uses stdio as the primary transport
 - Environment variables can be configured via .env
 - The project is intentionally minimal and extensible
+
 
