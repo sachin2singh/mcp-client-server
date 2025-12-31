@@ -4,14 +4,14 @@ A monorepo containing Model Context Protocol (MCP) client and server implementat
 
 ## 🔁 Request–Response Flow
 
-A simple request lifecycle description improves protocol understanding:
-<img width="3635" height="2445" alt="Untitled diagram-2025-12-31-110555" src="https://github.com/user-attachments/assets/734dead0-6cf2-4c9b-b6d2-c85f66d36782" />
-
 - MCP host discovers the terminal server
 - Server registers available tools
 - Client issues a tool invocation request
 - Server executes the command
 - Result is returned to the MCP host
+  
+<img width="3635" height="2445" alt="Untitled diagram-2025-12-31-110555" src="https://github.com/user-attachments/assets/734dead0-6cf2-4c9b-b6d2-c85f66d36782" />
+
 
 ## 🧪 Testing the MCP Terminal Server Using Cursor (MCP Host)
 The terminal_server has been independently tested using Cursor IDE acting as an MCP host/client, validating that the server works correctly outside of the custom MCP client.
