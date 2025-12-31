@@ -111,5 +111,5 @@ The terminal_server_docker has been independently tested using Claude Desktop ac
 
 - **MCP Client (Gemini-based)**: [`mcp-cleint/`](./mcp-cleint)
 - **Terminal MCP Server**: [`terminal_server/`](./terminal_server)
-- **Terminal MCP Server with Docker support**: [`terminal_server/`](./terminal_server_docker)
+- **Terminal MCP Server with Docker support**: [`terminal_server_docker/`](./terminal_server_docker)
 
