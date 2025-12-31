@@ -1,9 +1,9 @@
-# mcp-client-server
+# ⭐ MCP Terminal Client–Server Framework
 
 Monorepo containing MCP client and server implementations.
 
 
-## 🧪 Testing the MCP Server Using Cursor (MCP Host)
+## 🧪 Testing the MCP Terminal Server Using Cursor (MCP Host)
 The terminal_server has been independently tested using Cursor IDE acting as an MCP host/client, validating that the server works correctly outside of the custom MCP client.
 
 This setup confirms that the server:
