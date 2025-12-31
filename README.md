@@ -63,6 +63,49 @@ Open Cursor IDE
     Create a directory called "mcp_cursor_client" and then create a file "mcp_client.txt" under it. Write the content "Successfully created direcoty"
 ```
 
+## 🐳 Dockerized Server Support
+The terminal_server_docker module provides a containerized version of the MCP terminal server.
+- Install docker desktop
+- **Example**- Build docker image
+  ```bash
+    docker build -t terminal-server_docker .
+  ```
+- **Use Docker when**:
+    You want to avoid dependency conflicts on the host system.
+    The server will be used by multiple developers or CI pipelines.
+    The MCP server is exposed to **untrusted or experimental inputs**.
+    Process isolation from the host operating system.
+
+## 🧪 Testing the MCP Terminal Server with Docker Support Using Claude Desktop (MCP Host)
+The terminal_server_docker has been independently tested using Claude Desktop acting as an MCP host/client, validating that the server works correctly outside of the custom MCP client.
+
+## ▶️ Running and Testing via Claude Desktop
+  - Open Claude Desktop, you will be land on claude chat bot.
+  - Update **claude_desktop_config.json**
+    - Go to file->settings->Developer->Edit Config->open claude_desktop_config.json and update with below
+      ```json
+          {
+            "mcpServers": {
+              "terminal_server_docker": {
+                "command": "docker",
+                "args": [
+                  "run",
+                  "-i",
+                  "--rm",
+                  "--init",
+                  "-e", "DOCKER_CONTAINER=true",
+                  "-v", "D:/sp/mcp/workspace:/root/mcp/workspace",
+                  "terminal_server_docker"
+                ]
+              }
+          }
+        }
+   ```
+- Restart claude desktop
+- **Example prompt:**
+  ```text
+      Create a directory called "mcp_claude_client" and then create a file "mcp_client.txt" under it. Write the content "Successfully created direcoty"
+  ```
 
 ## 🔗 Related Modules
 
